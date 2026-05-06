@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cinzel', serif;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)),
+    url("images/bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #e6d8a8;
+}
+
+/* PANEL */
+.panel {
+  width: min(900px, 92vw);
+  padding: 35px;
+
+  background: rgba(8,8,8,0.92);
+  border: 1px solid rgba(201,168,76,0.25);
+
+  box-shadow:
+    inset 0 0 30px rgba(0,0,0,0.8),
+    0 0 80px rgba(0,0,0,0.9);
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.main-title {
+  font-size: 42px;
+  letter-spacing: 4px;
+  color: #f3e2a5;
+  text-shadow: 0 0 20px rgba(255,215,120,0.4);
+}
+
+.sub-title {
+  font-size: 14px;
+  letter-spacing: 6px;
+  color: #c9a84c;
+  margin-top: 5px;
+}
+
+/* ONLY CLICKABLE NAV */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #e2c97e;
+  border: 1px solid #8a6f2e;
+  padding: 10px 22px; /* Slightly wider padding for bold text */
+  background: #11110b;
+  transition: 0.2s;
+  
+  /* UPDATED PROPERTIES */
+  font-weight: 700;           /* High weight for Cinzel Bold */
+  text-transform: uppercase;  /* Standard "Game Button" look */
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.nav a:hover {
+  color: #fff;
+  background: #1a1a10;
+  border-color: #c9a84c;
+  box-shadow: 0 0 18px rgba(201,168,76,0.6);
+}
+
+/* SECTIONS */
+.section {
+  margin-top: 18px;
+}
+
+.section-title {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #bfae7a;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+/* CARD (NOT CLICKABLE FEEL) */
+.card {
+  padding: 14px;
+  text-align: center;
+
+  background: rgba(20,20,14,0.9);
+  border: 1px solid rgba(60,55,30,0.6);
+
+  font-size: 12px;
+  letter-spacing: 1px;
+
+  cursor: default; /* IMPORTANT: not clickable feel */
+}
+
+/* ICONS */
+.card img {
+  width: 28px;
+  height: 28px;
+  display: block;
+  margin: 0 auto 6px;
+  image-rendering: crisp-edges;
+}
+
+/* NO HOVER INTERACTION ON CARDS */
+.card:hover {
+  border: 1px solid rgba(60,55,30,0.6);
+  box-shadow: none;
+  transform: none;
+}
