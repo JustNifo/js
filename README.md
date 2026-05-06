@@ -1,2 +1,2 @@
-# js
-Lineage II Jupiter Saga C1
+# Lineage Cluster C1
+Lineage II Cluster C1 Private Server
