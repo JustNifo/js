@@ -1,4 +1,4 @@
-# Lineage II Cluster C1
-Lineage II Cluster C1 Private Server
-website : www.l2.cluster.ws
-Discord : SOON
+# Lineage II Gleeze C1
+# L2 Gleeze C1 Private Server
+# Website : www.la2.gleeze.com
+# Discord : https://discord.gg/p5WJuNujxs
