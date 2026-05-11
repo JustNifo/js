@@ -1,3 +1,32 @@
+.vote-sidebar {
+    position: fixed;
+    left: 20px;       /* Distance from left edge */
+    bottom: 20px;     /* Distance from bottom edge */
+    display: flex;
+    flex-direction: column; /* Stacks them vertically */
+    gap: 15px;        /* Space between banners */
+    align-items: flex-start;
+    z-index: 9999;
+}
+
+.vote-sidebar img {
+    display: block;
+    max-width: 140px; /* Limits width so they don't hit the middle frame */
+    height: auto;
+    border: none;
+    transition: filter 0.3s;
+}
+
+.vote-sidebar img:hover {
+    filter: brightness(1.2); /* Slight glow on hover */
+}
+
+/* On very small screens, hide them or scale them down to avoid overlap */
+@media (max-width: 1000px) {
+    .vote-sidebar {
+        display: none; 
+    }
+}
 * {
   margin: 0;
   padding: 0;
